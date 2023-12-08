@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Lesson 4 part 2 </title>
+	<style>
+		#container{
+			display: flex;
+		}
+		li{display: inline-block; list-style-type: none;}
+		p{
+			display: inline-block;
+			border-radius: 5px;
+			padding: 15px 15px 15px 15px;
+			border: 1px solid black;
+			background-color: lightgray;
+		}
+
+		#stretch{
+			cursor: pointer;
+			display: inline-block;
+			text-align: center;
+			padding: 13px;
+			color: white;
+			border: 1px solid black;
+			background-color: green;
+		}
+		#stretch:hover{
+			padding: 33px;
+			transition: padding 1s;
+		}
+
+		#click{
+			cursor: pointer;
+			display: inline-block;
+			text-align: center;
+			padding: 13px;
+			color: white;
+			border: 1px solid black;
+			background-color: green;
+			box-shadow: darkgray 7px 8px 4px 0px;
+		}
+		#click:active{		
+     	  box-shadow: white 0px 8px 24px;	
+		   transform: translateY(4px);
+		}
+
+		/* (top, right, bottom, and left) */
+		.last{
+			cursor: pointer;
+			display: inline-block;
+			text-align: center;
+			padding: 13px;
+			margin: 15px;
+			color: white;
+			border: 1px solid black;
+			background-color: green;
+		}
+		.last:hover{
+			padding: 13px 20px 13px 20px;
+			margin: 8px;
+		}
+	</style>
+</head>
+<body>
+	<h2> Pagination </h2>
+	<div id="container">
+		<p> Back </p>
+		
+		<ol>
+			<li> <a href="#"> 1 </a> </li>
+			<li> <a href="#"> 2 </a> </li>
+			<li> <a href="#"> 3 </a> </li>
+			<li> <a href="#"> 4 </a> </li>
+			<li> <a href="#"> 5 </a> </li>
+		</ol>
+		&nbsp; &nbsp; &nbsp;
+		<p> Next </p>
+	</div>
+
+	<h2> Stretch </h2>
+	<div id="stretch"> Stretch </div>
+
+	<h2> 3D Click </h2>
+	<button id="click"> Shadow </button>
+
+	<h2> Margin and padding together </h2>
+	
+	<div class="last"> one </div>
+	<div class="last"> two </div>
+	<div class="last"> three </div>
+
+	
+	<!-- Pagination -->
+	<!-- Pagination -->
+	<!-- Pagination -->
+	<!-- Pagination -->
+</body>
+</html>
