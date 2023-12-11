@@ -1,0 +1,19 @@
+button{
+    /* Top Right Bottom Left */
+    border-radius: 10px;
+    border: 1px solid green;
+    padding: 10px 14px 10px 14px;
+    color: white;
+    background-color: green;
+}
+
+.sideTask{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 22px;    
+}
+
+p.sideTask{
+    font-family: Montserrat;
+    font-weight: bold;
+}
