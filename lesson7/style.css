@@ -11,10 +11,12 @@
     display: inline-block;
     box-shadow: white 15px;
 }
-#ws{
-    border-radius: 20px;
-    padding: 7px 15px 7px 15px;
+.g2-input{
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
     width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /*---------------------------------------------------------------*/
 .g3{
