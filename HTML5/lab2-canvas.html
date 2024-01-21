@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Task</title>
+</head>
+<body>
+    <input type="color" id="targetColor">
+    <button>Pick a color</button>
+    
+    <br> <br>
+    
+    <canvas width="800" height="500"> </canvas>
+    
+    <script>
+        
+        var c = document.getElementsByTagName('canvas')[0];
+        var context = c.getContext('2d');
+        
+        // color of border
+        context.strokeStyle = 'black';
+        context.strokeRect(0, 0, 800, 500);
+        
+        function draw(color){
+            var i = 1;
+            
+            // color of circles
+            context.strokeStyle = color;
+            context.strokeRect(0, 0, 800, 500);
+            
+            do{
+                context.beginPath();
+
+                context.arc(Math.random()*c.width, Math.random()*c.height, 20, 30, 40);
+
+                context.stroke();
+                i++;
+            }while(i <= 100)       
+        }
+        
+        draw('black');
+        
+        var colorPicker = document.getElementById('targetColor');
+        var btn = document.getElementsByTagName('button')[0];
+        
+        btn.addEventListener('click', () => {
+            context.fillStyle = '#FFFFFF';
+            context.fillRect(0, 0, c.width, c.height); 
+            draw(colorPicker.value);
+        });
+            
+        
+    </script>
+</body>
+</html>
